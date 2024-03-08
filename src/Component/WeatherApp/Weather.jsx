@@ -20,6 +20,8 @@ const[wicon,setWicon]=useState(cloud_icon);
             return;
         }
         let url = `https://api.openweathermap.org/data/2.5/weather?q=${element.value}&units=metric&appid=${api_key}`;
+        // Add api here
+        
         try {
             let response = await fetch(url);
             if (!response.ok) {
